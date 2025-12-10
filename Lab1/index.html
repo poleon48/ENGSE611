@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บไซต์แนะนำตัวเอง (Lab) </title>
+
+    <style>
+        /* ตั้งค่าพื้นฐาน */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        /* ส่วนหัว (Header) - เพิ่มสีพื้นหลัง */
+        header {
+            background-color: #b39ddb; /* สีเทาอ่อนมาก */
+            padding: 60px 20px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            letter-spacing: 1px;
+            font-weight: 300;
+        }
+        
+        /* ส่วนนำทาง (Navigation) */
+        nav {
+            border-top: 1px solid #eeeeee;
+            border-bottom: 1px solid #eeeeee;
+            padding: 15px 0;
+            text-align: center;
+            margin-bottom: 40px;
+            background-color: #ffffff; /* ให้ nav เป็นสีขาวเพื่อแบ่ง header/main */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            color: #333333;
+            text-decoration: none;
+            font-weight: 400;
+            padding: 5px 0;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #000000;
+            border-bottom: 2px solid #000000;
+        }
+
+        /* ส่วนหลัก (Main Content) */
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ส่วน Section ย่อย */
+        section {
+            margin-bottom: 60px;
+            padding: 0;
+        }
+        
+        section h2 {
+            color: #000000;
+            font-size: 2em;
+            font-weight: 300;
+            border-bottom: 1px solid #dddddd;
+            padding-bottom: 10px;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        /* รูปภาพ */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0;
+            border: none;
+            display: block;
+            margin: 20px auto 40px auto; /* จัดกึ่งกลางรูปภาพ */
+        }
+
+        /* ตาราง (Table) */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th, table td {
+            border: none;
+            border-bottom: 1px solid #eeeeee;
+            padding: 15px 0;
+            text-align: left;
+        }
+
+        table th {
+            background-color: white;
+            color: #000000;
+            font-weight: 400;
+            border-bottom: 2px solid #333333;
+        }
+        
+        /* ฟอร์ม (Form) */
+        form fieldset {
+            border: 1px solid #eeeeee;
+            padding: 20px;
+        }
+
+        form legend {
+            padding: 0 10px;
+            color: #000000;
+            font-weight: 400;
+        }
+        
+        form label {
+            display: block;
+            margin-top: 20px;
+            font-weight: 400;
+            font-size: 0.9em;
+            color: #666666;
+        }
+
+        form input[type="text"], 
+        form input[type="email"], 
+        form textarea {
+            width: 100%;
+            padding: 10px 0;
+            margin-top: 5px;
+            border: none;
+            border-bottom: 1px solid #dddddd;
+            border-radius: 0;
+            box-sizing: border-box;
+        }
+        
+        form button {
+            background-color: #000000;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 0;
+            cursor: pointer;
+            margin-top: 30px;
+            letter-spacing: 1px;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #333333;
+        }
+
+        /* ส่วนท้าย (Footer) - เพิ่มสีพื้นหลัง */
+        footer {
+            background-color: #f0f0f0; /* สีเทาอ่อนมาก */
+            color: #666666;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 80px;
+            font-size: 0.9em;
+            border-top: 1px solid #eeeeee;
+        }
+        
+        footer a {
+            color: #333333;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #000000;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>เว็บไซต์ แนะนำตัวเอง</h1>
+        <p>ของนายปฐมพร หลีจาง</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#education">EDUCATION</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        
+        <section id="about">
+            <h2>ABOUT</h2>
+            
+            <img src="S__33579024.jpg" alt="รูปโปรไฟล์สไตล์มินิมอล" width="300">
+            
+            <article>
+                <h3>ข้อมูลส่วนตัว</h3>
+                <p>
+                    สวัดดีครับผมชื่อ โป อายุ 20 ปี เกิดวันที่ 22 เมษายน พศ.2548
+                    ที่อยู่ 393/56 ต.ริมกก อ.เมือง จ.เชียงราย 
+                </p>
+            </article>
+
+            <article>
+                <h3>ความสนใจ</h3>
+                <p>
+                    ความสนใจของผมคือการสร้างสรรค์สิ่งที่ใช้งานง่ายและสวยงาม ผมชอบการจัดระเบียบและใช้พื้นที่ว่างให้เกิดประโยชน์สูงสุดในการนำเสนอข้อมูล
+                </p>
+            </article>
+        </section>
+
+        <section id="skills">
+            <h2>SKILLS</h2>
+            <ul>
+                <li>HTML5 Structure (Semantic)</li>
+                <li>Photoshop</li>
+                <li>canva Design</li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>EDUCATION</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Institution</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024</td>
+                        <td>วิทยาลัยเทคนิคเชียงราย</td>
+                        <td>คอมพิวเตอร์เครือข่าย</td>
+                    </tr>
+                    <tr>
+                        <td>2025</td>
+                        <td>มหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา</td> 
+                        <td>วิศวะซอฟแวร์</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>CONTACT</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>SEND ME A MESSAGE</legend>
+                    
+                    <div>
+                        <label for="name">NAME</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div>
+                        <label for="message">MESSAGE</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit">SUBMIT</button>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 [นายปฐมพร หลีจาง]. All Rights Reserved.</p>
+        
+        <a href="https://www.facebook.com/yourprofile" target="_blank">Facebook</a> |
+        <a href="https://https://github.com/poleon48" target="_blank">GitHub</a>
+        </footer>
+
+</body>
+</html>
